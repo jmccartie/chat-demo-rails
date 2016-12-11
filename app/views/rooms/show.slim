@@ -1,0 +1,9 @@
+#room data=({ id: params[:id] })
+  h1 Chat
+
+  #messages
+    = render @messages
+
+
+  form data=({ behavior: 'send-message' })
+    textarea
